@@ -131,3 +131,14 @@ body {
 li {
     margin: 2px;
 }
+
+.credits_container {
+    max-width: 80%;
+    background-color: aliceblue;
+    padding: 64px 16px;
+    margin: 0 auto;
+}
+
+.credits {
+    text-align: center;
+}
