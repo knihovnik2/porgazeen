@@ -56,10 +56,11 @@ body {
     color: white;
     top: 75%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translateX(-50%);
     white-space: nowrap;
     opacity: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .casopis:hover .info_text {
@@ -109,9 +110,8 @@ body {
     width: 40%;
 }
 
-#cudlik80:checked ~ #overlay80 {
-    display: block;
-}
+#cudlik80:checked ~ #overlay80 { display: block; }
+#cudlik79:checked ~ #overlay79 { display: block; }
 
 .vrchni_radek_popupu {
     display: flex;
