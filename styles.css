@@ -1,0 +1,9 @@
+.container {
+    max-width: 90%;
+    background-color:aliceblue;
+    margin: 0 auto;
+    padding: 25px;
+}
+.casopis:hover {
+    transform: scale(1.05);
+}
