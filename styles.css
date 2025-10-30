@@ -77,3 +77,29 @@
 .casopis:hover .info_link {
     opacity: 1;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background: #0008;
+    z-index: 9999;
+}
+
+.info_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    border: 1px solid #000;
+    z-index: 10000;
+}
+
+#cudlik80:checked ~ #overlay80 {
+    display: block;
+}
