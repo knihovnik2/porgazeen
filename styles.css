@@ -1,5 +1,6 @@
-body {
-    margin: 0
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .grid_container {
@@ -16,25 +17,15 @@ body {
     justify-content: center;
 }
 
-/*casopis {
-    box-shadow: 6px 6px 12px 2px #0008;
-    transition: transform .15s linear;
-}
-
-
-.casopis:hover {
-    transform: scale(1.05);
-}*/
-
 .casopis {
     display: inline-block;
     position: relative;
-    box-shadow: 6px 6px 12px 2px #0008;
 }
 
 .casopis img {
     display: block;
     transition: transform .15s linear;
+    box-shadow: 6px 6px 12px 2px #0008;
 }
 
 .casopis:hover img {
@@ -54,4 +45,35 @@ body {
 .casopis:hover .gradient {
     opacity: 1;
     transform: scale(1.05);
+}
+
+.info_text {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 16px;
+}
+
+.casopis:hover .info_text {
+    opacity: 1;
+}
+
+.info_link {
+    position: absolute;
+    color: white !important;
+    top: 90%;
+    left: 100%;
+    transform: translate(-110%, 0%);
+    white-space: nowrap;
+    opacity: 0;
+    font-size: 16px !important;
+    text-decoration: underline !important;
+}
+
+.casopis:hover .info_link {
+    opacity: 1;
 }
