@@ -1,9 +1,57 @@
-.container {
-    max-width: 90%;
-    background-color:aliceblue;
-    margin: 0 auto;
-    padding: 25px;
+body {
+    margin: 0
 }
+
+.grid_container {
+    /*pozadi*/
+    max-width: 80%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 64px 16px;
+
+    /*mrizka pro obrazky*/
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+}
+
+/*casopis {
+    box-shadow: 6px 6px 12px 2px #0008;
+    transition: transform .15s linear;
+}
+
+
 .casopis:hover {
+    transform: scale(1.05);
+}*/
+
+.casopis {
+    display: inline-block;
+    position: relative;
+    box-shadow: 6px 6px 12px 2px #0008;
+}
+
+.casopis img {
+    display: block;
+    transition: transform .15s linear;
+}
+
+.casopis:hover img {
+    transform: scale(1.05);
+}
+
+.gradient {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, black 75%, black 100%);
+    opacity: 0;
+    transition: opacity .15s linear;
+    transition: transform .15s linear;
+}
+
+.casopis:hover .gradient {
+    opacity: 1;
     transform: scale(1.05);
 }
