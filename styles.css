@@ -140,6 +140,7 @@ body {
 #cudlik56:checked ~ #overlay56 { display: block; }
 #cudlik55:checked ~ #overlay55 { display: block; }
 #cudlik54:checked ~ #overlay54 { display: block; }
+#cudlik53b:checked ~ #overlay53b { display: block; }
 #cudlik53:checked ~ #overlay53 { display: block; }
 #cudlik52:checked ~ #overlay52 { display: block; }
 #cudlik51:checked ~ #overlay51 { display: block; }
