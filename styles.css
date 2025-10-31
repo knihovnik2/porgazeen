@@ -108,6 +108,8 @@ body {
     border: 1px solid #000;
     z-index: 10000;
     width: 40%;
+    max-height: 90%;
+    overflow: auto;
 }
 
 #cudlik80:checked ~ #overlay80 { display: block; }
@@ -213,7 +215,6 @@ li {
 
 .credits_container {
     max-width: 80%;
-    max-height: 100vh;
     background-color: aliceblue;
     padding: 64px 16px;
     margin: 0 auto;
