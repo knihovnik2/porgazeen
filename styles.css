@@ -116,6 +116,7 @@ body {
 #cudlik77:checked ~ #overlay77 { display: block; }
 #cudlik76:checked ~ #overlay76 { display: block; }
 #cudlik75:checked ~ #overlay75 { display: block; }
+#cudlik_koronapzeen:checked ~ #overlay_koronapzeen { display: block; }
 #cudlik74:checked ~ #overlay74 { display: block; }
 #cudlik73:checked ~ #overlay73 { display: block; }
 #cudlik72:checked ~ #overlay72 { display: block; }
@@ -212,6 +213,7 @@ li {
 
 .credits_container {
     max-width: 80%;
+    max-height: 100vh;
     background-color: aliceblue;
     padding: 64px 16px;
     margin: 0 auto;
