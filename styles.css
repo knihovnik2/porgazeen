@@ -21,6 +21,13 @@ body {
     justify-content: center;
 }
 
+/* protoze na mobilu to s 80% vypada fakt spatne a s 90% v pohode*/
+@media (orientation: portrait) {
+    .grid_container {
+        max-width: 90%;
+    }
+}
+
 /*casopis*/
 .casopis {
     display: inline-block;
@@ -160,6 +167,13 @@ li {
     padding: 64px 16px;
     margin: 0 auto;
     background-color: aliceblue;
+}
+
+/* protoze na mobilu to s 80% vypada fakt spatne a s 90% v pohode*/
+@media (orientation: portrait) {
+    .credits_container {
+        max-width: 90%;
+    }
 }
 
 .credits {
