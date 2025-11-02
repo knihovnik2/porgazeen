@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Tw Cen MT", "Century Gothic", Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .grid_container {
@@ -21,6 +21,7 @@ body {
     justify-content: center;
 }
 
+/*casopis*/
 .casopis {
     display: inline-block;
     position: relative;
@@ -40,8 +41,8 @@ body {
     display: block;
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, black 75%, black 100%);
     opacity: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, black 75%, black 100%);
     transition: opacity .15s linear;
     transition: transform .15s linear;
 }
@@ -67,19 +68,20 @@ body {
     opacity: 1;
 }
 
+/*otvirani link*/
 .info_link {
+    display: inline-flex;
     position: absolute;
-    color: white !important;
     top: 90%;
     left: 100%;
     transform: translate(-110%, 0%);
     white-space: nowrap;
     opacity: 0;
     font-size: 16px !important;
-    display: inline-flex;
+    color: white !important;
+    border-bottom: 1px solid currentColor;
     align-items: center;
     gap: 4px;
-    border-bottom: 1px solid currentColor;
 }
 
 .info_link:hover {
@@ -90,31 +92,81 @@ body {
     opacity: 1;
 }
 
+.sipka {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+
+/*tiraz*/
 .overlay {
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
-    display: none;
+    top: 0;
+    left: 0;
     background: #0008;
     z-index: 9999;
 }
 
 .info_popup {
     position: fixed;
+    width: 40%;
+    max-height: 90%;
+    padding: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 16px;
     background: white;
     border: 1px solid #000;
     z-index: 10000;
-    width: 40%;
-    max-height: 90%;
     overflow: auto;
 }
 
+.tiraz {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+li {
+    margin: 4px;
+}
+
+.subsety_redakce {
+    list-style-type: none;
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+.vrchni_radek_popupu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zavrit_popup:hover {
+    cursor: pointer;
+}
+
+.krizek {
+    width: 12px;
+    height: 12px;
+}
+
+/*credits*/
+.credits_container {
+    max-width: 80%;
+    padding: 64px 16px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.credits {
+    text-align: center;
+}
+
+/*zobrazovani popupu*/
 #cudlik80:checked ~ #overlay80 { display: block; }
 #cudlik79:checked ~ #overlay79 { display: block; }
 #cudlik78:checked ~ #overlay78 { display: block; }
@@ -197,50 +249,3 @@ body {
 #cudlik3:checked ~ #overlay3 { display: block; }
 #cudlik2:checked ~ #overlay2 { display: block; }
 #cudlik1:checked ~ #overlay1 { display: block; }
-
-.vrchni_radek_popupu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.zavrit_popup:hover {
-    cursor: pointer;
-}
-
-.tiraz {
-    list-style-type: none;
-    list-style-position: inside;
-}
-
-li {
-    margin: 4px;
-}
-
-.credits_container {
-    max-width: 80%;
-    background-color: aliceblue;
-    padding: 64px 16px;
-    margin: 0 auto;
-}
-
-.credits {
-    text-align: center;
-}
-
-.subsety_redakce {
-    list-style-type: none;
-    list-style-position: outside;
-    margin-left: 20px;
-}
-
-.krizek {
-    width: 12px;
-    height: 12px;
-}
-
-.sipka {
-    width: 12px;
-    height: 12px;
-    vertical-align: middle;
-}
