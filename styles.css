@@ -224,3 +224,9 @@ li {
 .credits {
     text-align: center;
 }
+
+.subsety_redakce {
+    list-style-type: none;
+    list-style-position: outside;
+    margin-left: 20px;
+}
