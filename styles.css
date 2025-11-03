@@ -32,6 +32,8 @@ body {
 .casopis {
     display: inline-block;
     position: relative;
+    height: 280px;
+    width: 198px;
 }
 
 .casopis img {
@@ -181,6 +183,14 @@ li {
 }
 
 /*zobrazovani popupu*/
+#cudlik88:checked ~ #overlay88 { display: block; }
+#cudlik87:checked ~ #overlay87 { display: block; }
+#cudlik86:checked ~ #overlay86 { display: block; }
+#cudlik85:checked ~ #overlay85 { display: block; }
+#cudlik84:checked ~ #overlay84 { display: block; }
+#cudlik83:checked ~ #overlay83 { display: block; }
+#cudlik82:checked ~ #overlay82 { display: block; }
+#cudlik81:checked ~ #overlay81 { display: block; }
 #cudlik80:checked ~ #overlay80 { display: block; }
 #cudlik79:checked ~ #overlay79 { display: block; }
 #cudlik78:checked ~ #overlay78 { display: block; }
